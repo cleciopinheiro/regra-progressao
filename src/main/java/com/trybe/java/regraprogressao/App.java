@@ -40,6 +40,24 @@ public class App {
       System.out.println("A soma dos pesos é diferente de 100!");
     }
 
+    double media = notaTotal * 100 / pesoTotal;
+
+    if (media >= 85.0) {
+      System.out.printf("Parabéns! Você alcançou %.1f%%! E temos o prazer " 
+              + 
+          "de informar que você obteve aprovação!%n", 
+          media
+      );
+    } else {
+      System.out.printf("Lamentamos informar que, com base na sua pontuação" 
+              + 
+            "alcançada neste período, %.1f%%, você não atingiu a pontuação " 
+              +
+            "mínima necessária para sua aprovação.%n", 
+            media
+      );
+    }
+
     scanner.close();
   }
 }
